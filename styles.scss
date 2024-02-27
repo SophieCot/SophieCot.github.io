@@ -93,6 +93,10 @@ a {
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
+.btn:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
 ol {
     counter-reset: name; 
     margin-bottom: 120px;
@@ -144,7 +148,9 @@ ol {
 
 .restaurants {
     background: var(--Background, #F6F6F6);
-    padding-top:50px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+
     .restaurants__card {
         width: 95%;
         background-color: white;
@@ -152,7 +158,19 @@ ol {
         border-radius: 25px;
         box-sizing: border-box;
         margin-left: 25px;  
-    }   
+    }  
+        .restaurants__card--badge {
+            background-color: #99E2D0;
+            color: #008766;
+            border-radius: 5px;
+            font-family: roboto;
+            font-weight: 500;
+            font-size: 35px;
+            position: absolute;
+            right: 50px;
+            margin-top: 30px;
+            padding: 20px 40px;   
+        }
         .restaurants__card--title {
             font-size: 30px;
             font-weight: 700;
@@ -183,33 +201,61 @@ ol {
     padding-bottom: 20px;
 }
 
+.like {
+    font-size: 60px;
+    position: absolute;
+    right: 60px;
+    margin-top: 30px;
+    &:hover {
+        opacity: 0;
+    }
+}
+.like2 {
+    font-size: 60px;
+    position: absolute;
+    right: 60px;
+    margin-top: 30px;
+    opacity:0;
+    &:active {
+        color:transparent;
+        background-image:linear-gradient(#9356DC,#FF79DA);
+        background-clip: text;
+        opacity:10;
+        transition: opacity 250ms;
+    }
+    &:hover {
+        color:transparent;
+        background-image:linear-gradient(#9356DC,#FF79DA);
+        background-clip: text;
+        opacity:10;
+        transition: opacity 250ms;
+    }
+}
 
 footer {
     background-color:#353535;
-    
-    .footer__contain {
-        margin-top:22px;
-        margin-bottom: 22px;
-        margin-right: 25px;
-        margin-left: 25px;
-
-    }
-            .footer__contain--logo {
+    padding-top:22px;
+    margin-bottom: 22px;
+ 
+            .footer__logo {
             color:white;
+            padding-top: 30px;
             margin-left: 50px;
             font-family:shrikand,cursive;
             font-size: 50px;
             font-family:shrikhand ;
         
         }
-        .footer__contain--list {
+        .footer__list {
             color:white;
             font-size:30px;
             font-family: roboto;
             list-style-type: none;
             padding-bottom: 30px;
         }
+
 }
+
 footer a {
     color: white;
 }
