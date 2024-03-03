@@ -19,7 +19,7 @@ a {
     justify-content: center;
     padding-top: 15px;
 
-    .logo__size{
+    .logo__size {
         width: 50%;
     }
 }
@@ -80,11 +80,10 @@ a {
     border-radius: 100px;
     background-color: violet;
     padding: 25px;
-    width: 218px;
     color: white;
     background-color: gray;
     background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-    height: 65px;
+    height: 55px;
     width: 60%;
     text-align: center;
     font-size: 50px;
@@ -263,4 +262,68 @@ footer a {
 li {
     padding:10px;
 }
+
+@media  screen and (min-width: 1220px) {
+    /* Desktop */
+.logo {
+    .logo__size {
+        width: 200px;
+    }
+}
+
+
+   
+.btn {
+    width: 30%;
+    font-size: 40px;
+    
+}
+
+ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.filter {
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    width: 40%;
+    .filter__text {
+        font-size: 16px;
+        display: flex;
+    }
+    }
+
+    .restaurants__contain {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .restaurants a {
+        width:50%;
+    }
+    footer {
+        display:flex;
+        flex-direction: row-reverse;
+        .footer__list {
+            margin-right: 100px;
+            display: flex;
+        }
+        .footer__logo {
+            margin-right: 150px;
+            font-size: 40px;
+        }
+    }
+
+    footer li {
+        font-size: 18px;
+
+    }
+    
+    
+}   
+
+
+
 
