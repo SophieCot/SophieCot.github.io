@@ -1,5 +1,4 @@
 
-  
 h2 {
     font-size: 60px;
     font-family: bold;
@@ -12,12 +11,15 @@ body {
 
 a {
     text-decoration: none;
+    color:black
 }
 
 .logo {
     display: flex;
     justify-content: center;
-    padding-top: 15px;
+    font-size: 30px;
+    font-family:shrikhand ;
+    margin: 15px;
 
     .logo__size {
         width: 50%;
@@ -77,16 +79,18 @@ a {
 }
 
 .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 100px;
     background-color: violet;
-    padding: 25px;
     color: white;
     background-color: gray;
     background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-    height: 55px;
-    width: 60%;
+    width: 218px;
+    height: 50px;
     text-align: center;
-    font-size: 50px;
+    font-size: 16px;
     font-family: roboto;
     /* Shadow/Button */
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -121,21 +125,22 @@ ol {
     }
     
     .filter__icon {
-        margin-right:30px;
-        font-size:30px;
+        margin-right: 25px;
         color:#7E7E7E
+    }
+    .filter__icon--color {
+        color: #9356DC;
     }
 }
 
 .filter::before {
     content: counter(name);
-    padding: 20px;
     background: #9356DC;
     border-radius: 100%;
     color: white;
-    font-size: 40px;
-    width: 1.5rem;
-    height: 1.5rem;
+    font-size: 14px;
+    width: 24px;
+    height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,59 +270,129 @@ li {
 
 @media  screen and (min-width: 1220px) {
     /* Desktop */
-.logo {
-    .logo__size {
-        width: 200px;
+.localisation {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-top: 0;
+    border-bottom: 0;
+    margin: 0;
+    .localisation__title {
+        font-size: 16px;
+        margin: 0;
+    }
+        .localisation__icon--size {
+            width:12px;
+            height: 16px;
+        }
+}  
+.discover {
+    padding-bottom: 35px;
+    .discover__title {
+        font-size: 40px;
+    }
+    .discover__subtitle {
+        font-size: 18px;
     }
 }
-
-
-   
-.btn {
-    width: 30%;
-    font-size: 40px;
-    
+.fonction {
+    padding: 50px 180px;
+}
+h2 {
+    font-size: 24px;
+    margin: 0px;
+    margin-bottom: 25px;
 }
 
 ol {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 0px;
+    gap: 25px;
+    margin: 0px;
 }
 .filter {
-    padding-top:10px;
-    padding-bottom: 10px;
+    padding: 0px;
+    height: 72px;
     border-radius: 25px;
-    width: 40%;
+    width: calc(100%/3);
+    margin: 0px;
     .filter__text {
         font-size: 16px;
         display: flex;
     }
+    }
+    .filter::before {
+        left: -0.8rem;
+    }
+    
+    .restaurants {
+        .restaurants__card {
+            margin-left: 0px;
+            width:auto;
+        }
+            .restaurants__card--title {
+                font-size: 18px;
+                margin: 0px;
+            }
+            .restaurants__card--subtitle {
+                font-size: 17px;
+            }
+            .restaurants__card--badge {
+                font-size: 14px;
+                right: 15px;
+                margin-top: 15px;
+                padding: 10px 20px;
+            }
     }
 
     .restaurants__contain {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 50px 100px;
     }
     .restaurants a {
-        width:50%;
+        width: 45%;
+        position: relative;
+    }
+    .card-image img {
+        height: 180px;
+    }
+    .card__contain {
+        margin-bottom: 0;
+        height: 50px;
+    }
+
+    .like {
+        font-size: 30px;
+        margin-top: 0px;
+        right: 30px;
+    }
+    .like2 {
+        font-size: 30px;
+        margin-top: 0px;
+        right: 30px;
     }
     footer {
         display:flex;
         flex-direction: row-reverse;
+        margin-bottom: 0;
         .footer__list {
             margin-right: 100px;
             display: flex;
         }
         .footer__logo {
-            margin-right: 150px;
-            font-size: 40px;
+            margin-right: 70px;
+            font-size: 18px;
+            display:flex;
         }
     }
 
     footer li {
-        font-size: 18px;
+        font-size: 16px;
 
     }
     
