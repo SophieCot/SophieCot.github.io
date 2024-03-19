@@ -1,3 +1,6 @@
+$purple:  #9356DC;
+$green-light: #99E2D0;
+$pink: #FF79DA;
 
 h2 {
     font-size: 60px;
@@ -7,6 +10,7 @@ h2 {
 
 body {
     margin: 0;
+  
 }
 
 a {
@@ -83,10 +87,10 @@ a {
     align-items: center;
     justify-content: center;
     border-radius: 100px;
-    background-color: violet;
+    background-color: $purple;
     color: white;
     background-color: gray;
-    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    background: var(--Button-Gradient, linear-gradient(193deg, $purple -11.44%, $pink 123.93%));
     width: 218px;
     height: 50px;
     text-align: center;
@@ -97,7 +101,7 @@ a {
 }
 
 .btn:hover {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, $purple -5.2%, $pink 110.74%);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 ol {
@@ -129,13 +133,13 @@ ol {
         color:#7E7E7E
     }
     .filter__icon--color {
-        color: #9356DC;
+        color: $purple;
     }
 }
 
 .filter::before {
     content: counter(name);
-    background: #9356DC;
+    background: $purple;
     border-radius: 100%;
     color: white;
     font-size: 14px;
@@ -164,7 +168,7 @@ ol {
         margin-left: 25px;  
     }  
         .restaurants__card--badge {
-            background-color: #99E2D0;
+            background-color: $green-light;
             color: #008766;
             border-radius: 5px;
             font-family: roboto;
@@ -220,16 +224,16 @@ ol {
     right: 60px;
     margin-top: 30px;
     opacity:0;
-    &:active {
+    &:active  {
         color:transparent;
-        background-image:linear-gradient(#9356DC,#FF79DA);
+        background-image:linear-gradient($purple,$pink);
         background-clip: text;
         opacity:10;
         transition: opacity 250ms;
     }
     &:hover {
         color:transparent;
-        background-image:linear-gradient(#9356DC,#FF79DA);
+        background-image:linear-gradient($purple,$pink);
         background-clip: text;
         opacity:10;
         transition: opacity 250ms;
@@ -267,6 +271,7 @@ footer a {
 li {
     padding:10px;
 }
+
 
 @media  screen and (min-width: 1220px) {
     /* Desktop */
@@ -355,7 +360,7 @@ ol {
         gap: 50px 100px;
     }
     .restaurants a {
-        width: 45%;
+        width: calc((100% - 100px) /2);
         position: relative;
     }
     .card-image img {
