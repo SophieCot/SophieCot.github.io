@@ -1,3 +1,5 @@
+@import url("loader.css");
+/* Variables*/
 h2 {
   font-size: 24px;
   font-family: bold;
@@ -31,6 +33,7 @@ a {
   justify-content: center;
   align-content: center;
   align-items: center;
+  color: #353535;
   background-color: #EAEAEA;
   border-top: 1px gray solid;
   border-bottom: 1px gray solid;
@@ -60,6 +63,7 @@ a {
   font-size: 24px;
   font-weight: 700;
   font-family: roboto;
+  margin-inline: 44px;
 }
 .discover .discover__subtitle {
   font-weight: 300;
@@ -74,7 +78,7 @@ a {
   font-family: roboto;
 }
 
-.btn {
+.button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,8 +95,7 @@ a {
   /* Shadow/Button */
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
-
-.btn:hover {
+.button:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
@@ -100,6 +103,9 @@ a {
 ol {
   counter-reset: name;
   padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .filter {
@@ -160,9 +166,9 @@ ol {
 .restaurants .restaurants__card {
   background-color: white;
   box-shadow: 0px 5px 20px #999;
-  border-radius: 25px;
+  border-radius: 15px;
   box-sizing: border-box;
-  margin-inline: 25px;
+  margin-inline: 17px;
 }
 .restaurants .restaurants__card--badge {
   background-color: #99E2D0;
@@ -172,8 +178,8 @@ ol {
   font-weight: 500;
   font-size: 14px;
   position: absolute;
-  right: 50px;
-  margin-top: 30px;
+  right: 30px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,12 +190,13 @@ ol {
   font-size: 18px;
   font-weight: 700;
   font-family: roboto;
+  margin: 0;
   margin-bottom: 7px;
 }
 .restaurants .restaurants__card--subtitle {
   font-size: 16px;
   font-family: roboto;
-  margin-top: 0;
+  margin: 0;
 }
 
 .restaurants a {
@@ -199,34 +206,27 @@ ol {
 
 .card-image img {
   width: 100%;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 231px;
+  height: 180px;
 }
 
 .card__contain {
-  height: 77px;
-  margin-left: 12px;
   margin-bottom: 13px;
   display: flex;
   justify-content: space-between;
+  padding: 15px;
 }
 
-.like {
-  position: absolute;
-  right: 60px;
-  margin-top: 30px;
-}
 .like:hover {
   opacity: 0;
 }
 
 .like2 {
   position: absolute;
-  right: 60px;
-  margin-top: 30px;
+  right: 2rem;
   opacity: 0;
 }
 .like2:active {
@@ -244,6 +244,11 @@ ol {
           background-clip: text;
   opacity: 10;
   transition: opacity 250ms;
+}
+
+.heartposition {
+  display: flex;
+  align-items: center;
 }
 
 footer {
@@ -275,6 +280,9 @@ li {
 
 @media screen and (min-width: 1220px) {
   /* Desktop */
+  li {
+    gap: 0;
+  }
   .localisation {
     display: flex;
     align-items: center;
@@ -300,9 +308,6 @@ li {
   .discover .discover__subtitle {
     font-size: 18px;
   }
-  .fonction {
-    padding: 50px 180px;
-  }
   h2 {
     font-size: 24px;
     margin: 0px;
@@ -322,6 +327,8 @@ li {
     border-radius: 25px;
     width: 33.3333333333%;
     margin: 0px;
+    display: flex;
+    flex-shrink: 0;
   }
   .filter .filter__text {
     font-size: 16px;
@@ -330,8 +337,11 @@ li {
   .filter::before {
     left: -0.8rem;
   }
+  .filter_contain {
+    margin-inline: 180px;
+    margin-block: 50px;
+  }
   .restaurants .restaurants__card {
-    margin-left: 0px;
     width: auto;
   }
   .restaurants .restaurants__card--title {
@@ -340,12 +350,6 @@ li {
   }
   .restaurants .restaurants__card--subtitle {
     font-size: 17px;
-  }
-  .restaurants .restaurants__card--badge {
-    font-size: 14px;
-    right: 15px;
-    margin-top: 15px;
-    padding: 10px 20px;
   }
   .restaurants__contain {
     display: flex;
@@ -372,8 +376,6 @@ li {
   }
   .like2 {
     font-size: 30px;
-    margin-top: 0px;
-    right: 30px;
   }
   footer {
     display: flex;
