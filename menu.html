@@ -2,6 +2,8 @@
 <html lang="fr">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh My Food</title>
     <link rel="stylesheet" type="text/css" href="menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -11,24 +13,24 @@
         rel="stylesheet">
 
 </head>
+
 <body>
     <header>
         <div class="header">
             <a class="arrow" href="index.html">
-            <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-left"></i>
             </a>
             <a class="logo" href="index.html">ohmyfood</a>
         </div>
     </header>
-    <img src="restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+    <img src="restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image représentant un plat dens un restaurant">
     <section class="menu">
         <div class="titleheart">
             <h2> La palette du goût </h2>
             <span> <i class="like fa-regular fa-heart fa-2x"></i></span>
         </div>
-            <span> <i class=" like2 fa-solid fa-heart fa-2x"></i></span>
-        
-        <h3> ENTRÉES </h3>
+        <span> <i class="like2 fa-solid fa-heart fa-2x"></i></span>
+         <h3> ENTRÉES </h3>
         <ol class="choice">
             <li class="menu__filter">
                 <div class="menu__filter--text">
@@ -40,7 +42,6 @@
                     <div class="menu__checklist">
                         <i class=" menu__checklist--icon fa-solid fa-check"></i>
                     </div>
-                </div>
                 </div>
             </li>
             <li class="menu__filter">
@@ -100,7 +101,7 @@
                     <p>Aux agrumes</p>
                 </div>
                 <div class="block">
-                    <span>44€</span>
+                    <div>44€</div>
                     <div class="menu__checklist">
                         <i class=" menu__checklist--icon fa-solid fa-check"></i>
                     </div>
@@ -146,15 +147,13 @@
                 </div>
             </li>
         </ol>
+        <div class="menu__btn">
+            <a class="button" href="#">
+                Commander
+            </a>
         </div>
-    
-    <div class="menu__btn">
-        <a class="btn" href="#">
-            Commander
-        </a>
-    </div>
     </section>
-    
+
     <footer>
         <div>
             <a href="index.html" class="footer__logo"> ohmyfood </a>
