@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh My Food</title>
     <link rel="stylesheet" type="text/css" href="menu.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,14 +23,16 @@
             <a class="logo" href="index.html">ohmyfood</a>
         </div>
     </header>
-    <img src="restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image représentant un plat dans un restaurant">
-    <section class="menu container">
+    <img src="restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image représentant un plat dens un restaurant">
+    <section class="menu">
         <div class="titleheart">
             <h2> La note enchantée </h2>
-            <span> <i class="like fa-regular fa-heart"></i></span>
+            <div class="heartposition">
+                <i class="like fa-regular fa-heart"></i>
+                <i class="like2 fa-solid fa-heart"></i>
+            </div>
         </div>
-        <span> <i class=" like2 fa-solid fa-heart"></i></span>
-        <h3> ENTRÉES </h3>
+         <h3> ENTRÉES </h3>
         <ol class="choice">
             <li class="menu__filter">
                 <div class="menu__filter--text">
@@ -60,7 +61,7 @@
             <li class="menu__filter">
                 <div class="menu__filter--text">
                     <h4>Homard et espuma de potiron</h4>
-                    <p>Marinés aux zestes d"orange</p>
+                    <p>Marinés aux zestes d'orange</p>
                 </div>
                 <div class="block">
                     <span>20€</span>
@@ -86,8 +87,8 @@
         <ol class="choice">
             <li class="menu__filter">
                 <div class="menu__filter--text">
-                    <h4>Noix de coquilles Saint-Jacques</h4>
-                    <p>Sur lit de purée de céléri-rave</p>
+                    <h4>Noix de coquilles Saint-Jaques</h4>
+                    <p>Sur lit de purée de celeri-rave</p>
                 </div>
                 <div class="block">
                     <span>40€</span>
@@ -110,11 +111,11 @@
             </li>
             <li class="menu__filter">
                 <div class="menu__filter--text">
-                    <h4>Mijoté de queue de boeuf</h4>
-                    <p>Et riz sauvage aux zetes de citron</p>
+                    <h4>Mijotée de queue de boeuft</h4>
+                    <p>Et riz sauvage au zestes de citron</p>
                 </div>
                 <div class="block">
-                    <span>45€</span>
+                    <div>45€</div>
                     <div class="menu__checklist">
                         <i class=" menu__checklist--icon fa-solid fa-check"></i>
                     </div>
@@ -126,7 +127,7 @@
             <li class="menu__filter">
                 <div class="menu__filter--text">
                     <h4>Macaron noisette et chocolat</h4>
-                    <p>Glace au caramel brun et sel de Guerande</p>
+                    <p>Glace au caramel brun et sel de guerande</p>
                 </div>
                 <div class="block">
                     <span>18€</span>
@@ -137,8 +138,8 @@
             </li>
             <li class="menu__filter">
                 <div class="menu__filter--text">
-                    <h4>Baba au rhum revsité</h4>
-                    <p>Avec son coulis de citron</p>
+                    <h4>MBaba au rhum</h4>
+                    <p>Revisité</p>
                 </div>
                 <div class="block">
                     <span>22€</span>
@@ -166,6 +167,7 @@
             </a>
         </div>
     </section>
+
     <footer>
         <div>
             <a href="index.html" class="footer__logo"> ohmyfood </a>
