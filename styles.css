@@ -378,13 +378,17 @@ li {
     font-size: 30px;
   }
   footer {
+    padding-block: 25px;
+    padding-inline: 30px;
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: 0;
+    align-items: center;
   }
   footer .footer__list {
     margin-right: 100px;
     display: flex;
+    gap: 10px;
   }
   footer .footer__logo {
     margin-right: 70px;
