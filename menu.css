@@ -38,6 +38,9 @@ p {
   font-size: 15px;
   font-weight: 300;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 ol {
@@ -49,10 +52,6 @@ ol {
   margin-bottom: 0;
   padding: 0;
   cursor: pointer;
-}
-
-span {
-  margin-bottom: 10px;
 }
 
 .header {
@@ -112,6 +111,7 @@ img {
 .titleheart {
   display: flex;
   justify-content: space-between;
+  margin-right: -30px;
 }
 
 .menu {
@@ -137,12 +137,19 @@ img {
   justify-content: space-between;
   overflow: hidden;
   position: relative;
+  transition: 0.7s ease-in-out;
 }
 .menu .menu__filter .menu__filter--text {
   padding: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 100%;
+  transition: 0.7s ease-in-out;
+}
+.menu .menu__filter .menu__filter--subtitle {
+  display: flex;
+  justify-content: space-between;
 }
 .menu .menu__checklist {
   margin-right: -60px;
@@ -169,12 +176,18 @@ img {
   gap: 10px;
   display: flex;
   align-items: flex-end;
-  transition: 1s;
+  transition: 0.6s ease-in-out;
 }
-.block:hover {
-  animation-name: check;
+
+.menu__filter:hover .block {
   transform: scale(0);
   transform: translate(-60px);
+  transition: 0.7s ease-in-out;
+}
+
+.menu__filter:hover .menu__filter--text {
+  width: calc(100% - 80px);
+  transition: 0.5s linear;
 }
 
 .menu__btn {
@@ -185,6 +198,53 @@ img {
   margin-top: 40px;
 }
 
+.starter {
+  animation: fadein 1s linear;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.dish {
+  animation: fadein 1s linear;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+.dessert {
+  animation: fadein 1s linear;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+}
+
+.choice li {
+  animation: fadein 1s ease-out;
+  animation-fill-mode: both;
+}
+
+.choice li:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.choice li:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.choice li:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.choice li:nth-child(4) {
+  animation-delay: 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 1220px) {
   /* Desktop */
   .arrow {
