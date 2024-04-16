@@ -20,7 +20,7 @@ h3 {
   margin-bottom: 12px;
   font-size: 16px;
   font-weight: 300;
-  border-bottom: #99E2D0 3px solid;
+  border-bottom: 3px solid;
   width: 50px;
 }
 
@@ -52,6 +52,10 @@ ol {
   margin-bottom: 0;
   padding: 0;
   cursor: pointer;
+}
+
+li {
+  gap: 0;
 }
 
 .header {
@@ -216,25 +220,67 @@ img {
   animation-fill-mode: both;
 }
 
-.choice li {
+.starter li {
   animation: fadein 1s ease-out;
   animation-fill-mode: both;
 }
 
-.choice li:nth-child(1) {
+.starter li:nth-child(1) {
   animation-delay: 0.5s;
 }
 
-.choice li:nth-child(2) {
+.starter li:nth-child(2) {
   animation-delay: 1s;
 }
 
-.choice li:nth-child(3) {
+.starter li:nth-child(3) {
   animation-delay: 1.5s;
 }
 
-.choice li:nth-child(4) {
+.starter li:nth-child(4) {
   animation-delay: 2s;
+}
+
+.dish li {
+  animation: fadein 1s ease-out;
+  animation-fill-mode: both;
+}
+
+.dish li:nth-child(1) {
+  animation-delay: 2.5s;
+}
+
+.dish li:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.dish li:nth-child(3) {
+  animation-delay: 3.5s;
+}
+
+.dish li:nth-child(4) {
+  animation-delay: 4s;
+}
+
+.dessert li {
+  animation: fadein 1s ease-out;
+  animation-fill-mode: both;
+}
+
+.dessert li:nth-child(1) {
+  animation-delay: 4.5s;
+}
+
+.dessert li:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.dessert li:nth-child(3) {
+  animation-delay: 5.5s;
+}
+
+.dessert li:nth-child(4) {
+  animation-delay: 6s;
 }
 
 @keyframes fadein {
